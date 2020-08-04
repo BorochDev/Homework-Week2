@@ -13,6 +13,7 @@ namespace HomeworkWeek2
         {
             //pętle if(true) służą tworzeniu zmiennych lokalnych aby nie rezerwować 
             //nazw dla całego programu
+            #region lesson 4
             #region 4.1
             if (true)
             {
@@ -20,7 +21,7 @@ namespace HomeworkWeek2
                 string Surname;
                 int Age;
                 Gender gender;
-                string PESEL;
+                long PESEL;
                 long ID;
             }
             #endregion
@@ -68,12 +69,14 @@ namespace HomeworkWeek2
                 double mass = double.Parse(Console.ReadLine());
             }
             #endregion
+            #endregion
+            #region lesson 7
             #region 7.1
             if (true)
             {
                 int a = 8;
                 int b = 8;
-                if (a==b)
+                if (a == b)
                 {
                     Console.WriteLine("zmienne a i b są równe");
                 }
@@ -84,7 +87,7 @@ namespace HomeworkWeek2
             {
                 Console.Write("Podaj liczbę: ");
                 int num = int.Parse(Console.ReadLine());
-                if (num%2==0)
+                if (num % 2 == 0)
                 {
                     Console.WriteLine($"{num} jest liczbą parzystą");
                 }
@@ -99,7 +102,7 @@ namespace HomeworkWeek2
             {
                 Console.Write("Podaj liczbę: ");
                 int num = int.Parse(Console.ReadLine());
-                if (num>=0)
+                if (num >= 0)
                 {
                     Console.WriteLine($"{num} jest liczbą dodatnią");
                 }
@@ -112,7 +115,7 @@ namespace HomeworkWeek2
             #region 7.4
             Console.Write("Podaj rok: ");
             int year = int.Parse(Console.ReadLine());
-            if (year%4==0)
+            if (year % 4 == 0)
             {
                 Console.WriteLine($"{year} jest rokiem przestępnym");
             }
@@ -126,15 +129,15 @@ namespace HomeworkWeek2
             {
                 Console.Write("Podaj swój wiek: ");
                 int age = int.Parse(Console.ReadLine());
-                if (age>=35)
+                if (age >= 35)
                 {
                     Console.Write("Możesz zostać posłem senatorem i prezydentem");
                 }
-                else if (age>=30 && age<35)
+                else if (age >= 30 && age < 35)
                 {
                     Console.Write("Możesz zostać posłem i senatorem");
                 }
-                else if (age>=21 && age<30)
+                else if (age >= 21 && age < 30)
                 {
                     Console.Write("Możesz zostać posłem");
                 }
@@ -147,11 +150,11 @@ namespace HomeworkWeek2
             #region 7.6
             Console.Write("Podaj swój wzrost: ");
             int Height = int.Parse(Console.ReadLine());
-            if (Height<=150)
+            if (Height <= 150)
             {
                 Console.WriteLine("gdzie jesteś? nie widze cie");
             }
-            else if (Height<=180 && Height>150)
+            else if (Height <= 180 && Height > 150)
             {
                 Console.WriteLine("hmmmm to już nie krasnal ale możesz jeszcze troche uronąć");
             }
@@ -169,7 +172,7 @@ namespace HomeworkWeek2
                 int num2 = int.Parse(Console.ReadLine());
                 Console.Write("Podaj trzecią liczbę: ");
                 int num3 = int.Parse(Console.ReadLine());
-                if (num1>=num2 && num1>=num3)
+                if (num1 >= num2 && num1 >= num3)
                 {
                     Console.WriteLine($"{num1} jest największą liczbą");
                 }
@@ -177,7 +180,7 @@ namespace HomeworkWeek2
                 {
                     Console.WriteLine($"{num2} jest największą liczbą");
                 }
-                else if(num3 >= num1 && num3 >= num2)
+                else if (num3 >= num1 && num3 >= num2)
                 {
                     Console.WriteLine($"{num3} jest największą liczbą");
                 }
@@ -193,7 +196,7 @@ namespace HomeworkWeek2
                 Console.Write("Podaj wynik z chemii: ");
                 int chem = int.Parse(Console.ReadLine());
                 if ((math > 70 && physic > 55 && chem > 45 && math + physic + chem > 180) ||
-                    (math + physic > 180) || 
+                    (math + physic > 180) ||
                     (math + chem > 180))
                 {
                     Console.WriteLine("Kandydat dopuszczony do rekrutacji");
@@ -209,11 +212,11 @@ namespace HomeworkWeek2
             {
                 Console.Write("Podaj temperature: ");
                 int temp = int.Parse(Console.ReadLine());
-                if (temp<0)
+                if (temp < 0)
                 {
                     Console.WriteLine("cholernie piździ");
                 }
-                else if (temp>=0 && temp<10)
+                else if (temp >= 0 && temp < 10)
                 {
                     Console.WriteLine("zimno");
                 }
@@ -294,7 +297,7 @@ namespace HomeworkWeek2
                 Console.Write("Podaj numer dnia tygodnia: ");
                 int day = int.Parse(Console.ReadLine());
                 Console.Write("ten dzień to: ");
-                switch (day%7)
+                switch (day % 7)
                 {
                     case 1:
                         Console.WriteLine("Poniedziałek");
@@ -347,10 +350,10 @@ namespace HomeworkWeek2
                         Console.WriteLine(numbA * numbB);
                         break;
                     case 4:
-                        Console.WriteLine(numbA/numbB);
+                        Console.WriteLine(numbA / numbB);
                         break;
                     case 5:
-                        Console.WriteLine(Math.Pow(numbA,numbB));
+                        Console.WriteLine(Math.Pow(numbA, numbB));
                         break;
                     default:
                         Console.WriteLine("Nie znam takiej komendy");
@@ -358,6 +361,8 @@ namespace HomeworkWeek2
                 }
             }
             #endregion
+            #endregion
+
         }
     }
 }
