@@ -40,6 +40,7 @@ namespace HomeworkWeek2
             {
                 int length = int.Parse(Console.ReadLine());
                 int Hgh = int.Parse(Console.ReadLine());
+
                 Console.WriteLine(Math.Sqrt(length * length + Hgh * Hgh));
             }
             #endregion
@@ -49,6 +50,7 @@ namespace HomeworkWeek2
                 int numb1;
                 double numb2;
                 string str;
+
                 numb1 = 10;
                 str = "Szkoła Dotneta";
                 numb2 = 12.5;
@@ -59,12 +61,16 @@ namespace HomeworkWeek2
             {
                 Console.Write("Podaj imie: ");
                 string name = Console.ReadLine();
+
                 Console.Write("Podaj nazwisko: ");
                 string surname = Console.ReadLine();
+
                 Console.Write("Podaj wiek: ");
                 int age = int.Parse(Console.ReadLine());
+
                 Console.Write("podaj numer telefonu: ");
                 int telNum = int.Parse(Console.ReadLine());
+
                 Console.Write("Podaj wage: ");
                 double mass = double.Parse(Console.ReadLine());
             }
@@ -76,6 +82,7 @@ namespace HomeworkWeek2
             {
                 int a = 8;
                 int b = 8;
+
                 if (a == b)
                 {
                     Console.WriteLine("zmienne a i b są równe");
@@ -87,6 +94,7 @@ namespace HomeworkWeek2
             {
                 Console.Write("Podaj liczbę: ");
                 int num = int.Parse(Console.ReadLine());
+
                 if (num % 2 == 0)
                 {
                     Console.WriteLine($"{num} jest liczbą parzystą");
@@ -102,6 +110,7 @@ namespace HomeworkWeek2
             {
                 Console.Write("Podaj liczbę: ");
                 int num = int.Parse(Console.ReadLine());
+
                 if (num >= 0)
                 {
                     Console.WriteLine($"{num} jest liczbą dodatnią");
@@ -115,6 +124,7 @@ namespace HomeworkWeek2
             #region 7.4
             Console.Write("Podaj rok: ");
             int year = int.Parse(Console.ReadLine());
+
             if (year % 4 == 0)
             {
                 Console.WriteLine($"{year} jest rokiem przestępnym");
@@ -129,6 +139,7 @@ namespace HomeworkWeek2
             {
                 Console.Write("Podaj swój wiek: ");
                 int age = int.Parse(Console.ReadLine());
+
                 if (age >= 35)
                 {
                     Console.Write("Możesz zostać posłem senatorem i prezydentem");
@@ -150,6 +161,7 @@ namespace HomeworkWeek2
             #region 7.6
             Console.Write("Podaj swój wzrost: ");
             int Height = int.Parse(Console.ReadLine());
+
             if (Height <= 150)
             {
                 Console.WriteLine("gdzie jesteś? nie widze cie");
@@ -168,10 +180,13 @@ namespace HomeworkWeek2
             {
                 Console.Write("Podaj pierwszą liczbę: ");
                 int number1 = int.Parse(Console.ReadLine());
+
                 Console.Write("Podaj drugą liczbę: ");
                 int number2 = int.Parse(Console.ReadLine());
+
                 Console.Write("Podaj trzecią liczbę: ");
                 int num3 = int.Parse(Console.ReadLine());
+
                 if (number1 >= number2 && number1 >= num3)
                 {
                     Console.WriteLine($"{number1} jest największą liczbą");
@@ -191,10 +206,13 @@ namespace HomeworkWeek2
             {
                 Console.Write("Podaj wynik z matmy: ");
                 int math = int.Parse(Console.ReadLine());
+
                 Console.Write("Podaj wynik z fizyki: ");
                 int physic = int.Parse(Console.ReadLine());
+
                 Console.Write("Podaj wynik z chemii: ");
                 int chem = int.Parse(Console.ReadLine());
+
                 if ((math > 70 && physic > 55 && chem > 45 && math + physic + chem > 180) ||
                     (math + physic > 180) ||
                     (math + chem > 180))
@@ -212,6 +230,7 @@ namespace HomeworkWeek2
             {
                 Console.Write("Podaj temperature: ");
                 int temp = int.Parse(Console.ReadLine());
+
                 if (temp < 0)
                 {
                     Console.WriteLine("cholernie piździ");
@@ -243,10 +262,13 @@ namespace HomeworkWeek2
             {
                 Console.Write("Podaj pierwszy bok trójkąta: ");
                 int sideA = int.Parse(Console.ReadLine());
+
                 Console.Write("Podaj drugi bok trójkąta: ");
                 int sideB = int.Parse(Console.ReadLine());
+
                 Console.Write("Podaj trzeci bok trójkąta: ");
                 int sideC = int.Parse(Console.ReadLine());
+
                 if (sideA + sideB < sideC ||
                     sideA + sideC < sideB ||
                     sideB + sideC < sideA)
@@ -264,7 +286,9 @@ namespace HomeworkWeek2
             {
                 Console.Write("Podaj ocene: ");
                 int mark = int.Parse(Console.ReadLine());
+
                 Console.Write("Słownie ta ocena to: ");
+
                 switch (mark)
                 {
                     case 1:
@@ -296,7 +320,9 @@ namespace HomeworkWeek2
             {
                 Console.Write("Podaj numer dnia tygodnia: ");
                 int day = int.Parse(Console.ReadLine());
+
                 Console.Write("ten dzień to: ");
+
                 switch (day % 7)
                 {
                     case 1:
@@ -333,11 +359,15 @@ namespace HomeworkWeek2
                 Console.WriteLine("4) dzielenie");
                 Console.WriteLine("5) potęga (A^B)");
                 int choice = int.Parse(Console.ReadLine());
+
                 Console.Write("Podakj liczbe A: ");
                 int numbA = int.Parse(Console.ReadLine());
+
                 Console.Write("Podakj liczbe B: ");
                 int numbB = int.Parse(Console.ReadLine());
+
                 Console.Write("Twój wynik to: ");
+
                 switch (choice)
                 {
                     case 1:
@@ -368,6 +398,7 @@ namespace HomeworkWeek2
             {
                 int primeNumb = 0;
                 bool isPrime;
+
                 for (int i = 0; i <= 100; i++)
                 {
                     isPrime = true;
@@ -398,6 +429,7 @@ namespace HomeworkWeek2
             {
                 int num = 0;
                 int even = 0;
+
                 do
                 {
                     if (num % 2 == 0)
@@ -406,6 +438,7 @@ namespace HomeworkWeek2
                     }
                     num++;
                 } while (num <= 1000);
+
                 Console.WriteLine($"There are {even} even numbers");
             }
             #endregion
@@ -413,13 +446,17 @@ namespace HomeworkWeek2
             int A = 0;
             int B = 1;
             int C;
+
             Console.WriteLine("pierwsze 12 wyrazów ciągu Fibonacciego");
             Console.WriteLine(A);
             Console.WriteLine(B);
+
             for (int i = 0; i < 10; i++)
             {
                 C = A + B;
+
                 Console.WriteLine(C);
+
                 A = B;
                 B = C;
             }
@@ -427,7 +464,9 @@ namespace HomeworkWeek2
             #region 8.4
             Console.Write("Podaj liczbe: ");
             int numb = int.Parse(Console.ReadLine());
+
             int draw = 1;
+
             for (int i = 0; draw <= numb; i++)
             {
                 for (int x = 0; x < i; x++)
@@ -450,6 +489,7 @@ namespace HomeworkWeek2
             #endregion
             #region 8.6
             double sum;
+
             for (int i = 0; i < 21; i++)
             {
                 sum = 0;
@@ -463,6 +503,7 @@ namespace HomeworkWeek2
             #region 8.7
             Console.Write("Podaj wysokość diamentu: ");
             int height = int.Parse(Console.ReadLine());
+
             for (int i = 1; i <= height; i++)
             {
                 if (i * 2 - 1 < height)
@@ -521,6 +562,7 @@ namespace HomeworkWeek2
             #region 8.8
             Console.WriteLine("Napisz wyraz");
             string word = Console.ReadLine();
+
             for (int i = word.Length -1; i >= 0; i--)
             {
                 Console.Write(word[i]);
@@ -529,14 +571,18 @@ namespace HomeworkWeek2
             #endregion
             #region 8.9
             Console.Write("Wpisz liczbę dziesiętną: ");
+
             int dec = int.Parse(Console.ReadLine());
             int help = 1;
             string bin= "";
+
             while (help <=dec)
             {
                 help *= 2;
             }
+
             help /= 2;
+
             while (help>0)
             {
                 if (help<=dec)
@@ -550,15 +596,19 @@ namespace HomeworkWeek2
                 }
                 help /= 2;
             }
+
             Console.WriteLine($"systemie binarnym to: {bin}");
             #endregion
             #region 8.10
             Console.Write("Podaj pierwszą liczbę: ");
             int num1 = int.Parse(Console.ReadLine());
+
             Console.Write("Podaj drugą liczbę: ");
             int num2 = int.Parse(Console.ReadLine());
+
             int memory1 = num1;
             int prime;
+
             while (num2>1)
             {
                 prime = GetDivPrime(num2);
@@ -576,7 +626,7 @@ namespace HomeworkWeek2
             }
             Console.WriteLine($"NNW: {num1}");
             #endregion
-#endregion
+            #endregion
 
         }
 
@@ -585,6 +635,7 @@ namespace HomeworkWeek2
             int prime = 2;
             int memory = prime;
             bool isPrime = false;
+
             while (prime <= num)
             {
                 isPrime = true;
